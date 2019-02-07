@@ -209,7 +209,7 @@ class UnrealIntegrationTest(TestCase):
         frames = bt.frames
         main = frames[-1]
         assert main.errors is None
-        assert main.instruction_addr == '0xfd53034'
+        assert main.instruction_addr == '0x7ff6814b3394'
 
         attachments = sorted(
             EventAttachment.objects.filter(
